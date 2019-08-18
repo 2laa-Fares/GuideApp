@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/branchImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/branchName"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/swissra_medium"
+        android:textSize="12sp"
+        android:textColor="#525257"
+        app:layout_constraintRight_toLeftOf="@+id/branchImage"
+        app:layout_constraintTop_toTopOf="@+id/branchImage" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#9A9A9A"
+        android:textSize="9dp"
+        android:fontFamily="@font/swissra_medium"
+        android:drawableRight="@mipmap/location_gray"
+        android:drawablePadding="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/branchImage"
+        app:layout_constraintTop_toBottomOf="@+id/branchName" />
+
+    <ImageButton
+        android:id="@+id/editBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/branchImage"
+        app:layout_constraintLeft_toRightOf="@+id/deleteBranch"
+        app:layout_constraintTop_toTopOf="@+id/branchImage"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:srcCompat="@mipmap/edit_pin" />
+
+    <ImageButton
+        android:id="@+id/deleteBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/branchImage"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/branchImage"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:srcCompat="@mipmap/delete" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/branchImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/branchImage"
+        app:srcCompat="@mipmap/forward_arrow" />
+
+
+</android.support.constraint.ConstraintLayout>

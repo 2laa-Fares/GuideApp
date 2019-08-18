@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_m"
+        android:icon="@mipmap/gear"
+        android:title="القائمة"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/menu_preview"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="@string/preview"
+                android:visible="false"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/menu_edit"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:icon="@mipmap/edit_pin"
+                android:title="@string/edit"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/menu_delete"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:icon="@mipmap/delete"
+                android:title="@string/delete"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>

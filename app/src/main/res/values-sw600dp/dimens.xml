@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size"  tools:override="true">20sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">30sp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">90dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width" tools:override="true">336dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_min_width" tools:override="true">192dp</dimen>
+    <dimen name="design_bottom_navigation_item_max_width" tools:override="true">192dp</dimen>
+    <dimen name="design_bottom_navigation_item_min_width" tools:override="true">112dp</dimen>
+    <dimen name="fab_margin" tools:override="true">1dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">40dp</dimen>
+</resources>

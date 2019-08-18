@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Guide</string>
+    <string name="title_activity_nev">NevActivity</string>
+    <string name="title_home">الرئيسيه</string>
+    <string name="title_dashboard">المفضل</string>
+    <string name="title_notifications">الاشعارات</string>
+    <string name="title_profile">الشخصية</string>
+    <string name="title_owner">المطاعم</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="service_not_available_ar">الخدمة غير متوفرة</string>
+    <string name="service_not_available_en">Service not available...</string>
+    <string name="user">user</string>
+    <string name="placeType">place type</string>
+    <string name="coffee">coffees</string>
+    <string name="hotel">hotels</string>
+    <string name="doctor">doctors</string>
+    <string name="store">stores</string>
+    <string name="place">place</string>
+    <string name="coffees">مقاهي ومطاعم</string>
+    <string name="hotels">فنادق</string>
+    <string name="doctors">أطباء</string>
+    <string name="shops">متاجر</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">مسح</string>
+    <string name="branch">branch</string>
+    <string name="placeImage">place name</string>
+    <string name="token">token</string>
+    <string name="userId">userId</string>
+    <string name="preview">بيانات المنشائات الخاصه به</string>
+
+    <string-array name="doctors_category_array">
+        <item/>
+        <item>طبيب جلدية</item>
+        <item>طبيب اسنان</item>
+        <item>طبيب نفسي</item>
+        <item>طبيب اطفال وحديثي الولادة</item>
+        <item>طبيب مخ واعصاب</item>
+        <item>طبيب عظام</item>
+        <item>طبيب نساء وتوليد</item>
+        <item>طبيب انف واذن وحنجرة</item>
+        <item>طبيب قلب واوعية دموية</item>
+        <item>طبيب امراض دم</item>
+        <item>طبيب اورام</item>
+        <item>طبيب باطنة</item>
+        <item>طبيب تخسيس وتغذية</item>
+        <item>طبيب جراحة اطفال</item>
+        <item>طبيب جراحة اورام</item>
+        <item>طبيب جراحة اوعية دموية</item>
+        <item>طبيب جرحة تجميل</item>
+        <item>طبيب جراحة سمنة ومناظير</item>
+        <item>طبيب جراحة عامة</item>
+        <item>طبيب ذكورة وعقم</item>
+        <item>طبيب رماتيزم</item>
+        <item>طبيب سكر وغدد صماء</item>
+        <item>طبيب صدر وجهاز تنفسي</item>
+        <item>طبيب علاج طبيعي</item>
+        <item>طبيب عيون</item>
+        <item>طبيب كبد</item>
+        <item>طبيب كلي</item>
+        <item>طبيب مسالك بولية</item>
+        <item>طبيب نطق وتخاطب</item>
+    </string-array>
+
+    <string-array name="hotel_category_array">
+        <item/>
+        <item>فندق خمس نجوم</item>
+        <item>فندق اربع نجوم</item>
+        <item>فندق ثلاث نجوم</item>
+        <item>فندق نجمتين</item>
+        <item>فندق نجمة</item>
+    </string-array>
+
+    <string-array name="coffees_category_array">
+        <item/>
+        <item>مطعم</item>
+        <item>مخبز</item>
+        <item>كافيه</item>
+        <item>مقهى</item>
+        <item>متجر ايس كريم</item>
+        <item>مطعم وجبات سريعه</item>
+        <item>مطعم فول وفلافل</item>
+        <item>مطعم مشويات</item>
+        <item>مطعم شرقي</item>
+        <item>مطعم فطائر و بيتزا</item>
+        <item>مطعم ماكولات بحريه</item>
+        <item>مطعم لحوم</item>
+        <item>مطعم دجاج</item>
+    </string-array>
+
+    <string-array name="store_category_array">
+        <item/>
+        <item>محل ملابس</item>
+        <item>محل أحذية</item>
+        <item>محل حقائب</item>
+        <item>محل ساعات</item>
+        <item>محل نظارات</item>
+        <item>محل أكسسوارات</item>
+    </string-array>
+
+    <string-array name="user_types_category_array">
+        <item>طبيب</item>
+        <item>مالك متاجر</item>
+        <item>مالك فنادق</item>
+        <item>مالك مطاعم او مقاهي</item>
+    </string-array>
+</resources>

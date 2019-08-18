@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/transparent"
+    android:textAlignment="gravity">
+
+    <Button
+        android:id="@+id/toolbar_edit"
+        android:layout_marginRight="8dp"
+        android:layout_width="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:background="@mipmap/edit"
+        />
+
+    <ImageView
+        android:id="@+id/toolbar_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/makka_icon"
+        />
+
+    <Button
+        android:id="@+id/toolbar_back"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="left"
+        android:background="@mipmap/back"
+        />
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ownerImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/profile"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/swissra_bold"
+        android:textSize="22dp"
+        android:textColor="#525257"
+        app:layout_constraintRight_toLeftOf="@+id/ownerImage"
+        app:layout_constraintTop_toTopOf="@+id/ownerImage" />
+
+    <TextView
+        android:id="@+id/jobTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#9A9A9A"
+        android:textSize="16dp"
+        android:fontFamily="@font/swissra_bold"
+        android:drawableRight="@mipmap/job"
+        android:drawableTint="#525257"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/responsibleTextView"
+        app:layout_constraintLeft_toLeftOf="@+id/menuOwner"
+        app:layout_constraintTop_toBottomOf="@+id/ownerName"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/responsibleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#9A9A9A"
+        android:textSize="16dp"
+        android:fontFamily="@font/swissra_bold"
+        android:drawablePadding="8dp"
+        android:text="مسئول عن:"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/coffee"
+        android:drawableTint="#525257"
+        app:layout_constraintRight_toLeftOf="@+id/ownerImage"
+        app:layout_constraintTop_toBottomOf="@+id/ownerName"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/menuOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ownerImage"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/ownerImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/menu_icon" />
+
+
+</android.support.constraint.ConstraintLayout>

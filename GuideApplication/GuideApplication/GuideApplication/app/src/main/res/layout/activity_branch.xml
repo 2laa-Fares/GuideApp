@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PlaceProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/collapsing_toolbar_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary" >
+
+            <ImageView
+                android:id="@+id/collapsing_toolbar_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+
+            <include
+                layout="@layout/app_bar"
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.a10.guideapplication.customViews.MyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!-- app:layout_behavior attribute value settings make app tool bar appear while RecyclerView scroll. -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/collapsing_toolbar_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/placeNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textMultiLine"
+            android:text="Place name"
+            android:textAlignment="center"
+            android:textColor="#525257"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="?actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeNameTV"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#EEEEEE"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/black"
+            app:tabTextColor="#AFAFAF"
+            android:background="@color/white"/>
+
+        <com.example.a10.guideapplication.customViews.WrapContentHeightViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.constraint.ConstraintLayout>
+    </com.example.a10.guideapplication.customViews.MyNestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

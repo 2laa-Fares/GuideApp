@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImageView"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="11sp"
+        android:textColor="#525257"
+        app:layout_constraintRight_toLeftOf="@+id/userImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#A0A0A7"
+        android:textSize="7dp"
+        app:layout_constraintRight_toLeftOf="@+id/userImageView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_margin="8dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:progressDrawable="@drawable/ratingbar_yellow_12"
+        android:rotationY="180"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#A0A0A7"
+        android:textSize="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar3"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar3"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+
+    <TextView
+        android:id="@+id/ratingDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="right"
+        android:inputType="textMultiLine"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textSize="11sp"
+        android:textColor="#A0A0A7"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userImageView" />
+</android.support.constraint.ConstraintLayout>

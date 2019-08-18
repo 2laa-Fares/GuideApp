@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_fragment">
+
+        <EditText
+            android:id="@+id/branchNameET"
+            style="@style/MyEditTextStyle"
+            android:inputType="textMultiLine"
+            android:hint="اسم الفرع"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/branchAddressET"
+            style="@style/MyEditTextStyle"
+            android:inputType="textMultiLine"
+            android:hint="العنوان"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/branchNameET" />
+
+        <EditText
+            android:id="@+id/phone1ET"
+            style="@style/MyEditTextStyle"
+            android:inputType="phone"
+            android:hint="الجوال"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/branchAddressET" />
+
+        <EditText
+            android:id="@+id/phone2ET"
+            style="@style/MyEditTextStyle"
+            android:inputType="phone"
+            android:hint="الجوال"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone1ET" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إضافة صور"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone2ET" />
+
+        <ImageView
+            android:id="@+id/takePhotosImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:srcCompat="@mipmap/cam" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photosRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takePhotosImageView" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="المواعيد"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photosRecyclerView" />
+
+        <TextView
+            android:id="@+id/fromTimeTV"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:hint="من"
+            android:gravity="center"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/toTimeTV"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:hint="الى"
+            android:gravity="center"
+            android:background="@color/white"
+            app:layout_constraintRight_toLeftOf="@id/fromTimeTV"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <ImageView
+            android:id="@+id/forwardImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fromTimeTV"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@mipmap/forward"/>
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="اضافة موقع"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:drawableRight="@mipmap/location_b"
+            android:drawablePadding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

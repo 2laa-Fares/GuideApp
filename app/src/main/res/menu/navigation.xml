@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_owner"
+            android:icon="@mipmap/coffee_grey"
+            android:visible="false"
+            android:title="@string/title_owner" />
+
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@mipmap/profile_grey"
+            android:title="@string/title_profile" />
+
+        <item
+            android:id="@+id/navigation_notifications"
+            android:icon="@mipmap/alart_grey"
+            android:title="@string/title_notifications" />
+
+        <item
+            android:id="@+id/navigation_favorite"
+            android:icon="@mipmap/favorite_grey"
+            android:title="@string/title_dashboard" />
+
+        <item
+            android:id="@+id/navigation_home"
+            android:checked="true"
+            android:icon="@mipmap/home_grey"
+            android:title="@string/title_home" />
+    </group>
+
+</menu>

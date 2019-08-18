@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/swissra_light"
+            android:text="تفاصيل الخدمة"
+            android:textColor="#BEBEBE"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/roomTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/spinner_background"
+            android:gravity="right|center"
+            android:spinnerMode="dialog"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+        <EditText
+            android:id="@+id/priceET"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/rect_border"
+            android:inputType="number"
+            android:padding="8dp"
+            android:hint="السعر"
+            android:textColor="#BFBFBF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomTypeSpinner" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="ر.س/ ليلة"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/priceET"
+            app:layout_constraintRight_toLeftOf="@+id/priceET"
+            app:layout_constraintTop_toTopOf="@+id/priceET" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/swissra_medium"
+            android:text="خدمات الإقامة"
+            android:textColor="#BFBFBF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priceET" />
+
+        <ImageView
+            android:id="@+id/wifiImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:srcCompat="@mipmap/wifi_light" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/swissra_medium"
+            android:text="شبكة إنترنت"
+            android:textColor="#BFBFBF"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@+id/wifiImageView"
+            app:layout_constraintRight_toRightOf="@+id/wifiImageView"
+            app:layout_constraintTop_toBottomOf="@id/wifiImageView" />
+
+        <ImageView
+            android:id="@+id/gymImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintLeft_toRightOf="@+id/swimmingImageView"
+            app:layout_constraintRight_toLeftOf="@+id/wifiImageView"
+            app:layout_constraintTop_toTopOf="@+id/wifiImageView"
+            app:srcCompat="@mipmap/weights_light" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/swissra_medium"
+            android:text="نادى رياضى"
+            android:textColor="#BFBFBF"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@+id/gymImageView"
+            app:layout_constraintRight_toRightOf="@+id/gymImageView"
+            app:layout_constraintTop_toBottomOf="@+id/gymImageView" />
+
+        <ImageView
+            android:id="@+id/swimmingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gymImageView"
+            app:srcCompat="@mipmap/swimming_light" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/swissra_medium"
+            android:text="حمام سباحة"
+            android:textColor="#BFBFBF"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/swimmingImageView"
+            app:layout_constraintStart_toStartOf="@+id/swimmingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/swimmingImageView" />
+
+        <ImageView
+            android:id="@+id/mealsImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:srcCompat="@mipmap/meal_light" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/swissra_medium"
+            android:text="مطعم"
+            android:textColor="#BFBFBF"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/mealsImageView"
+            app:layout_constraintStart_toStartOf="@+id/mealsImageView"
+            app:layout_constraintTop_toBottomOf="@+id/mealsImageView" />
+
+        <ImageView
+            android:id="@+id/parkingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintLeft_toLeftOf="@+id/gymImageView"
+            app:layout_constraintRight_toRightOf="@+id/gymImageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:srcCompat="@mipmap/parking_light" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/swissra_medium"
+            android:text="موقف سيارات"
+            android:textColor="#BFBFBF"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@+id/parkingImageView"
+            app:layout_constraintRight_toRightOf="@+id/parkingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/parkingImageView" />
+
+    <Button
+        android:id="@+id/addServiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="إضافة خدمة"
+        android:textColor="@color/white"
+        android:fontFamily="@font/swissra_bold"
+        android:textSize="12sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
